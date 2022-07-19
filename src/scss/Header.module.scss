@@ -1,4 +1,4 @@
-@import "./All.scss";
+@import "./Color.scss";
 
 .header {
   background-color: $secondary-color;
@@ -15,8 +15,8 @@
   font-weight: 600;
 }
 
-.user-image,
-.user-image img {
+.userImage,
+.userImage img {
   width: 38px;
   height: 38px;
 }
