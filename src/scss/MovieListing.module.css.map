@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU;AACV,SAAS,CAAC;EACR,MAAM,EAAE,QAAQ;CAMjB;;AARD,AAGE,UAHQ,CAGR,EAAE;AAFJ,SAAS,CAEP,EAAE,CAAC;EACD,KAAK,ECHQ,OAAO;EDIpB,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,GAAG;CACjB;;AAGH,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,qCAAqC;EAC5D,QAAQ,EAAE,IAAI;CACf",
+    "sources": [
+        "MovieListing.module.scss",
+        "Color.scss"
+    ],
+    "names": [],
+    "file": "MovieListing.module.css"
+}

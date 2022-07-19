@@ -1,6 +1,6 @@
 @import "./Color.scss";
 
-.card-item {
+.cardItem {
   background: $secondary-color;
   cursor: pointer;
   transition: all 0.3s;
@@ -11,7 +11,7 @@
   }
 }
 
-.card-top {
+.cardTop {
   height: 300px;
 
   img {
@@ -20,10 +20,10 @@
   }
 }
 
-.card-bottom {
+.cardBottom {
   padding: 20px;
 }
-.card-info {
+.cardInfo {
   color: $font-primary;
   h4 {
     font-size: 22px;

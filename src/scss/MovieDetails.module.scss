@@ -1,6 +1,6 @@
 @import "./Color.scss";
 
-.movie-section {
+.movieSection {
   display: flex;
   justify-content: space-evenly;
   padding: 40px 0px;
@@ -8,7 +8,7 @@
   font-weight: 400;
 }
 
-.movie-rating {
+.movieRating {
   padding-left: 3px;
   margin-top: 20px;
   color: $font-secondary;
@@ -18,16 +18,16 @@
   }
 }
 
-.movie-title {
+.movieTitle {
   font-size: 40px;
   color: $font-primary;
 }
-.movie-plot {
+.moviePlot {
   margin-top: 20px;
   line-height: 1.8rem;
 }
 
-.movie-info > div span:first-child {
+.movieInfo > div span:first-child {
   padding: 10px 0px;
   color: $font-primary;
   font-weight: 600;
@@ -35,7 +35,7 @@
   display: inline-block;
 }
 
-.movie-info > div span {
+.movieInfo > div span {
   color: $font-secondary;
 }
 
@@ -54,6 +54,6 @@
   color: peachpuff;
 }
 
-.section-right {
+.sectionRight {
   margin-left: 30px;
 }
