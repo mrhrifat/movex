@@ -10,11 +10,13 @@ const Root = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/movie/:imdbID" element={<MovieDetails />} />
-        <Route element={<PageNotFound />} />
-      </Routes>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movie/:imdbID" element={<MovieDetails />} />
+          <Route element={<PageNotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );
