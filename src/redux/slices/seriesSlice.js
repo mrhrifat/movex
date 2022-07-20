@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const fetchSeries = createAsyncThunk("series/fetchSeries", async () => {
-  const seriesTextKey = "friend";
+  const seriesTextKey = "friends";
   const type = "series";
 
   return await movieApi
