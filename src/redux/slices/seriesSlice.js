@@ -14,7 +14,7 @@ const fetchSeries = createAsyncThunk("series/fetchSeries", async () => {
       `?apiKey=${process.env.REACT_APP_API_KEY}&s=${seriesTextKey}&type=${type}`
     )
     .then((res) => {
-      console.log(res.data);
+      //   console.log(res.data);
       return res.data;
     })
     .catch((e) => {
@@ -30,7 +30,7 @@ const seriesSlice = createSlice({
       console.log("Peding");
     },
     [fetchSeries.fulfilled]: (state, { payload }) => {
-      console.log("Successful");
+      //   console.log("Successful");
       return { ...state, series: payload };
     },
     [fetchSeries.rejected]: () => {
