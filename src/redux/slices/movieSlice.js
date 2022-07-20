@@ -13,7 +13,8 @@ const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
       `?apiKey=${process.env.REACT_APP_API_KEY}&s=${movieTextKey}&type=${type}`
     )
     .then((res) => {
-      //   console.log(res);
+      // console.log(res);
+      // console.log(res.data);
       return res.data;
     })
     .catch((e) => {
