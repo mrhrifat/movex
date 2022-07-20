@@ -5,7 +5,7 @@ const initialState = {
   movies: {},
 };
 
-export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
+const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
   const movieTextKey = "harry";
   const type = "movie";
   return await movieApi
@@ -45,5 +45,6 @@ const movieSlice = createSlice({
 });
 
 export default movieSlice.reducer;
-export const { addMovies } = movieSlice.actions;
+// export const { addMovies } = movieSlice.actions
+
 export const getAllMovies = (state) => state.movies.movies;
