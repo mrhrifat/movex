@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const MovieCard = () => {
-  return (
-    <div>MovieCard</div>
-  )
-}
+  return <div>MovieCard</div>;
+};
 
-export default MovieCard
+export default MovieCard;

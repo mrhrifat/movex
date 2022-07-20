@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import MovieListing from "./MovieListing";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <div className="bannerImg"></div>
+      <MovieListing />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
