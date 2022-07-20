@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import MovieListing from "./MovieListing";
 import { useDispatch } from "react-redux";
-import { fetchMovies } from "../redux/movies/movieSlice";
+import { fetchMovies } from "../redux/slices/movieSlice";
+import { fetchSeries } from "../redux/slices/seriesSlice";
 
 const Home = () => {
   // const movieTextKey = "harry";
@@ -30,6 +31,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(fetchMovies());
+    dispatch(fetchSeries());
   }, [dispatch]);
 
   return (
