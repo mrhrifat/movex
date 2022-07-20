@@ -6,7 +6,7 @@ const initialState = {
 };
 
 export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
-  const movieTextKey = "titanic";
+  const movieTextKey = "harry";
   const type = "movie";
   return await movieApi
     .get(
