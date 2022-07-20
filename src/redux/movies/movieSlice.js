@@ -25,11 +25,11 @@ const movieSlice = createSlice({
   name: "movies",
   // initialState:initialState,
   initialState,
-  reducers: {
-    addMovies: (state, { payload }) => {
-      state.movies = payload;
-    },
-  },
+  //   reducers: {
+  //     addMovies: (state, { payload }) => {
+  //       state.movies = payload;
+  //     },
+  //   },
   extraReducers: {
     [fetchMovies.pending]: () => {
       console.log("Pending");
