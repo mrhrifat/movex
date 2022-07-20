@@ -15,6 +15,7 @@ const fetchSeries = createAsyncThunk("series/fetchSeries", async () => {
     )
     .then((res) => {
       console.log(res.data);
+      return res.data;
     })
     .catch((e) => {
       console.log(e);
@@ -40,4 +41,4 @@ const seriesSlice = createSlice({
 
 export default seriesSlice.reducer;
 export { fetchSeries };
-export const allSeries = (state) => state.series.series;
+export const getAllSeries = (state) => state.series.series;
