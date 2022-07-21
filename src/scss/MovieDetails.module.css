@@ -5,7 +5,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 40px 0px;
+  padding: 40px 20px;
   color: #ffffff;
   font-weight: 400;
 }
@@ -58,7 +58,7 @@
 }
 
 .fa-calendar {
-  color: peachpuff;
+  color: #ffdab9;
 }
 
 .sectionRight {
