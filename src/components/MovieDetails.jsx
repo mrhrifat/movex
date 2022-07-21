@@ -31,7 +31,7 @@ const MovieDetails = () => {
     Awards,
   } = details;
 
-  console.log(details);
+  // console.log(details);
 
   useEffect(() => {
     dispatch(fetchDetails(imdbID));
