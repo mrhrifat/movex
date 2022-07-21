@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,UAAU;AACV,SAAS;AACT,YAAY,CAAC;EACX,MAAM,EAAE,QAAQ;CAMjB;;AATD,AAIE,UAJQ,CAIR,EAAE;AAHJ,SAAS,CAGP,EAAE;AAFJ,YAAY,CAEV,EAAE,CAAC;EACD,KAAK,ECJQ,OAAO;EDKpB,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,GAAG;CACjB",
+    "mappings": "",
     "sources": [
-        "MovieListing.module.scss",
-        "Color.scss"
+        "MovieListing.module.scss"
     ],
     "names": [],
     "file": "MovieListing.module.css"

@@ -1,18 +1,15 @@
 @import "./Color.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
 a {
   text-decoration: none;
 }
-
 body {
+  font-family: "Open Sans", sans-serif;
   background: $primary-color;
 }
-.container {
-  margin: 0px 40px;
+h3 {
+  color: $font-secondary;
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 22px;
 }

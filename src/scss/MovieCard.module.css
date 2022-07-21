@@ -1,40 +1,26 @@
-.cardItem {
+.cards {
   background: #1a242f;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  min-height: 450px;
+  min-height: 400px;
   height: 100%;
   margin: 10px;
 }
 
-.cardItem:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.cards:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.cardTop {
-  height: 300px;
-}
-
-.cardTop img {
+.cards img {
   width: 100%;
+  height: 280px;
+}
+
+.cards .card-body {
   height: 100%;
-}
-
-.cardBottom {
-  padding: 20px;
-}
-
-.cardInfo {
-  color: #ffffff;
-}
-
-.cardInfo h4 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=MovieCard.module.css.map */
