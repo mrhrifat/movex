@@ -4,13 +4,16 @@ import { getAllMovies } from "../redux/slices/movieSlice";
 import MovieCard from "./MovieCard";
 import classes from "../scss/MovieListing.module.css";
 import { getAllSeries } from "../redux/slices/seriesSlice";
+import { getAllEpisodes } from "../redux/slices/episodeSlice";
 
 const MovieListing = () => {
   const movies = useSelector(getAllMovies);
   const series = useSelector(getAllSeries);
+  const episodes = useSelector(getAllEpisodes);
 
   // console.log(movies);
   // console.log(series);
+  // console.log(episodes);
 
   const renderList =
     movies.Response === "True" ? (
@@ -36,8 +39,24 @@ const MovieListing = () => {
       </div>
     );
 
+  const renderEpisodesList =
+    episodes.Response === "True" ? (
+      episodes.Search.map((episode, index) => {
+        return <MovieCard key={index} data={episode} />;
+      })
+    ) : (
+      <div className={classes.moviesError}>
+        {/* <h3>{series.Error}</h3> */}
+        <h3>Error</h3>
+      </div>
+    );
+
   return (
     <div className={classes.movieWrapper}>
+      <div className={classes.episodeList}>
+        <h2>Episode</h2>
+        <div className={classes.movieContainer}>{renderEpisodesList}</div>
+      </div>
       <div className={classes.movieList}>
         <h2>Movies</h2>
         <div className={classes.movieContainer}>{renderList}</div>
