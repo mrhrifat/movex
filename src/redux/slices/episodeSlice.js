@@ -5,24 +5,25 @@ const initialState = {
   episodes: {},
 };
 
-const fetchEpisodes = createAsyncThunk("episodes/fetchEpisodes", async () => {
-  const episodeTextKey = "hacker";
-  //   const type = "episode";
-  // Episode Type Not Working
-  const type = "movie";
+const fetchEpisodes = createAsyncThunk(
+  "episodes/fetchEpisodes",
+  async (term) => {
+    // const episodeTextKey = "hacker";
+    //   const type = "episode";
+    // Episode Type Not Working
+    const type = "movie";
 
-  return await movieApi
-    .get(
-      `?apiKey=${process.env.REACT_APP_API_KEY}&s=${episodeTextKey}&type=${type}`
-    )
-    .then((res) => {
-    //   console.log(res);
-      return res.data;
-    })
-    .catch((e) => {
-      console.log(e);
-    });
-});
+    return await movieApi
+      .get(`?apiKey=${process.env.REACT_APP_API_KEY}&s=${term}&type=${type}`)
+      .then((res) => {
+        //   console.log(res);
+        return res.data;
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }
+);
 
 const episodeSlice = createSlice({
   name: "episodes",
