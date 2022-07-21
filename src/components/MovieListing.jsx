@@ -55,12 +55,6 @@ const MovieListing = () => {
 
   return (
     <div className="container">
-      <div className={classes.episodeList}>
-        <h3>Episode</h3>
-        <div>
-          <Slider {...Settings}>{renderEpisodesList}</Slider>
-        </div>
-      </div>
       <div className={classes.movieList}>
         <h3>Movies</h3>
         <div>
@@ -71,6 +65,12 @@ const MovieListing = () => {
         <h3>Series</h3>
         <div>
           <Slider {...Settings}>{renderSeriesList}</Slider>
+        </div>
+      </div>
+      <div className={classes.episodeList}>
+        <h3>Episode</h3>
+        <div>
+          <Slider {...Settings}>{renderEpisodesList}</Slider>
         </div>
       </div>
     </div>
