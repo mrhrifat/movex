@@ -4,8 +4,9 @@ import classes from "../scss/Footer.module.css";
 const Footer = () => {
   return (
     <div className={classes.footer}>
-      <div>Movex</div>
-      <div>© 2022 Inc || All Rights Reserved </div>
+      <div className="container text-center">
+        <p className="m-0 pt-2">Movex Inc © 2022 || All Rights Reserved </p>
+      </div>
     </div>
   );
 };
