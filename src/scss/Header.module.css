@@ -24,4 +24,39 @@
   width: 38px;
   height: 38px;
 }
+
+.searchBar {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchBar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+}
+
+.searchBar form button {
+  padding: 0px 8px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 38px;
+}
+
+.searchBar input {
+  font-size: 18px;
+  width: 100%;
+  padding: 5px 5px 5px 10px;
+  height: 38px;
+  outline: none;
+}
 /*# sourceMappingURL=Header.module.css.map */
