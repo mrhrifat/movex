@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const PageNotFound = () => {
   return (
-    <div>PageNotFound</div>
-  )
-}
+    <div className="container">
+      <h4 className="text-center">PageNotFound</h4>
+    </div>
+  );
+};
 
-export default PageNotFound
+export default PageNotFound;
