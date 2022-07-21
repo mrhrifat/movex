@@ -36,12 +36,7 @@ const Home = () => {
     dispatch(fetchEpisodes());
   }, [dispatch]);
 
-  return (
-    <div>
-      <div className="bannerImg"></div>
-      <MovieListing />
-    </div>
-  );
+  return <MovieListing />;
 };
 
 export default Home;
