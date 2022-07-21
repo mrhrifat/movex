@@ -24,6 +24,11 @@ const fetchDetails = createAsyncThunk(
 const detailsSlice = createSlice({
   name: "detailsSlice",
   initialState,
+  reducers: {
+    removeSelectedDetails: (state) => {
+      state.details = {};
+    },
+  },
   extraReducers: {
     [fetchDetails.pending]: () => {
       console.log("Pending");
@@ -39,5 +44,6 @@ const detailsSlice = createSlice({
 });
 
 export default detailsSlice.reducer;
+export const { removeSelectedDetails } = detailsSlice.actions;
 export { fetchDetails };
 export const getDetails = (state) => state.details.details;
