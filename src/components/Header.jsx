@@ -18,7 +18,6 @@ const Header = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     // console.log(term);
-    
     if (term === "") return alert("Please enter search term!");
     dispatch(fetchMovies(term));
     dispatch(fetchSeries(term));
