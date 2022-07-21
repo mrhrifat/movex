@@ -7,17 +7,13 @@ const MovieCard = ({ data }) => {
   const { Poster, Title, Year, imdbID } = data;
   return (
     <Link to={`/movie/${imdbID}`}>
-      <div className={classes.cardItem}>
-        <div className={classes.cardInner}>
-          <div className={classes.cardTop}>
-            <img src={Poster} alt={Title} />
-          </div>
-          <div className={classes.cardBottom}>
-            <div className={classes.cardInfo}>
-              <h4>{Title}</h4>
-              <p>{Year}</p>
-            </div>
-          </div>
+      <div className={`card ${classes.cards}`}>
+        <img src={Poster} className="card-img-top" alt={Title} />
+        <div className="card-body">
+          <h6 className="card-title">
+            {String(Title).length > 20 ? `${Title.substring(0, 20)}...` : Title}
+          </h6>
+          <p className="card-text">{Year}</p>
         </div>
       </div>
     </Link>
