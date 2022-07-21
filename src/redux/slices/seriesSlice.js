@@ -5,14 +5,12 @@ const initialState = {
   series: {},
 };
 
-const fetchSeries = createAsyncThunk("series/fetchSeries", async () => {
-  const seriesTextKey = "friends";
+const fetchSeries = createAsyncThunk("series/fetchSeries", async (term) => {
+  // const seriesTextKey = "friends";
   const type = "series";
 
   return await movieApi
-    .get(
-      `?apiKey=${process.env.REACT_APP_API_KEY}&s=${seriesTextKey}&type=${type}`
-    )
+    .get(`?apiKey=${process.env.REACT_APP_API_KEY}&s=${term}&type=${type}`)
     .then((res) => {
       //   console.log(res.data);
       return res.data;
