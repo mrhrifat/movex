@@ -6,13 +6,21 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Form, Button } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { fetchMovies } from "../redux/slices/movieSlice";
+import { fetchSeries } from "../redux/slices/seriesSlice";
+import { fetchEpisodes } from "../redux/slices/episodeSlice";
 
 const Header = () => {
   const [term, setTerm] = useState("");
+  const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(term);
+    // console.log(term);
+    dispatch(fetchMovies(term));
+    dispatch(fetchSeries(term));
+    dispatch(fetchEpisodes(term));
   };
 
   return (
