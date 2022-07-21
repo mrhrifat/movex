@@ -30,10 +30,14 @@ const Home = () => {
   //   fetchData();
   // }, []);
 
+  const movieTextKey = "Harry";
+  const seriesTextKey = "Friends";
+  const episodeTextKey = "Hacker";
+
   useEffect(() => {
-    dispatch(fetchMovies());
-    dispatch(fetchSeries());
-    dispatch(fetchEpisodes());
+    dispatch(fetchMovies(movieTextKey));
+    dispatch(fetchSeries(seriesTextKey));
+    dispatch(fetchEpisodes(episodeTextKey));
   }, [dispatch]);
 
   return <MovieListing />;
