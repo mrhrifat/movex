@@ -3,6 +3,7 @@ import MovieListing from "./MovieListing";
 import { useDispatch } from "react-redux";
 import { fetchMovies } from "../redux/slices/movieSlice";
 import { fetchSeries } from "../redux/slices/seriesSlice";
+import { fetchEpisodes } from "../redux/slices/episodeSlice";
 
 const Home = () => {
   // const movieTextKey = "harry";
@@ -32,6 +33,7 @@ const Home = () => {
   useEffect(() => {
     dispatch(fetchMovies());
     dispatch(fetchSeries());
+    dispatch(fetchEpisodes());
   }, [dispatch]);
 
   return (
