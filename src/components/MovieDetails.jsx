@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { fetchDetails, getDetails } from "../redux/slices/detailsSlice";
+import {
+  fetchDetails,
+  getDetails,
+  removeSelectedDetails,
+} from "../redux/slices/detailsSlice";
 import classes from "../scss/MovieDetails.module.css";
 
 const MovieDetails = () => {
@@ -31,6 +35,9 @@ const MovieDetails = () => {
 
   useEffect(() => {
     dispatch(fetchDetails(imdbID));
+    return () => {
+      dispatch(removeSelectedDetails());
+    };
   }, [dispatch, imdbID]);
 
   const renderDetails = (
