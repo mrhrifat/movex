@@ -5,6 +5,8 @@ import MovieCard from "./MovieCard";
 import classes from "../scss/MovieListing.module.css";
 import { getAllSeries } from "../redux/slices/seriesSlice";
 import { getAllEpisodes } from "../redux/slices/episodeSlice";
+import Slider from "react-slick";
+import { Settings } from "../others/Setting";
 
 const MovieListing = () => {
   const movies = useSelector(getAllMovies);
@@ -52,18 +54,24 @@ const MovieListing = () => {
     );
 
   return (
-    <div className={classes.movieWrapper}>
+    <div className="container">
       <div className={classes.episodeList}>
-        <h2>Episode</h2>
-        <div className={classes.movieContainer}>{renderEpisodesList}</div>
+        <h3>Episode</h3>
+        <div>
+          <Slider {...Settings}>{renderEpisodesList}</Slider>
+        </div>
       </div>
       <div className={classes.movieList}>
-        <h2>Movies</h2>
-        <div className={classes.movieContainer}>{renderList}</div>
+        <h3>Movies</h3>
+        <div>
+          <Slider {...Settings}>{renderList}</Slider>
+        </div>
       </div>
       <div className={classes.showList}>
-        <h2>Series</h2>
-        <div className={classes.movieContainer}>{renderSeriesList}</div>
+        <h3>Series</h3>
+        <div>
+          <Slider {...Settings}>{renderSeriesList}</Slider>
+        </div>
       </div>
     </div>
   );
