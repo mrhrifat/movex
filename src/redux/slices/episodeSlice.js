@@ -8,7 +8,7 @@ const initialState = {
 const fetchEpisodes = createAsyncThunk(
   "episodes/fetchEpisodes",
   async (term) => {
-    // const episodeTextKey = "hacker";
+    // const episodeTextKey = "Harry";
     //   const type = "episode";
     // Episode Type Not Working
     const type = "movie";
