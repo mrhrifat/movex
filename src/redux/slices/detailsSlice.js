@@ -11,7 +11,7 @@ const fetchDetails = createAsyncThunk(
     return await movieApi
       .get(`?apiKey=${process.env.REACT_APP_API_KEY}&i=${imdbID}&Plot=full`)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         // console.log(res.data);
         return res.data;
       })
